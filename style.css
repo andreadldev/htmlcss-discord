@@ -48,6 +48,14 @@
     background-color: #424649;
 }
 
+.btn-primary {
+    color: white;
+    background-color: #7289da;
+}
+
+.btn-primary:hover {
+    background-color: #7b93e8;
+}
 /* ---------------------------------HEADER--------------------------------- */
 
 /* -------------SOPRA------------- */
@@ -136,20 +144,35 @@ header {
 
 /* ---------------------------------MAIN--------------------------------- */
 
+main section:first-child {
+    margin-top: 30px;
+}
+
+section h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
 section:nth-child(even) {
-    background-color: #d3d3d3;
+    background-color: #f6f6f6;
 }
 
 .block-small {
-    width: 40%;
+    width: 30%;
+    padding-top: 30px;
 }
 
 .block-big {
     width: 60%;
 }
 
+.block-big:nth-child(2) {
+    margin-left: 135px;
+}
+
 .block-bigger {
-    width: 100%;
+    width: 70%;
+    text-align: center;
 }
 
 /* --------------------------------FOOTER--------------------------------- */
