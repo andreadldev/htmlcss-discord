@@ -145,6 +145,10 @@ header {
 
 /* ---------------------------------MAIN--------------------------------- */
 
+section:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
 main section:first-child {
     margin-top: 30px;
 }
@@ -165,25 +169,29 @@ main section:nth-child(3):before {
     height: 100px;
 }
 
-section h2 {
+main h2 {
     font-size: 38px;
     margin-bottom: 20px;
 }
 
-section h3 {
+main h3 {
     font-size: 20px;
     letter-spacing: 0.5px;
     margin-bottom: 35px;
 }
 
-section:nth-child(even) {
-    background-color: #f6f6f6;
+main p {
+    line-height: 1.5;
 }
 
 .block-small {
     width: 30%;
     padding-top: 30px;
     margin: 40px 0;
+}
+
+.block-small:nth-child(1) {
+    margin-left: 70px;
 }
 
 .block-big {
@@ -213,27 +221,87 @@ section:nth-child(even) {
 /* --------------------------------FOOTER--------------------------------- */
 
 /* -------------SOPRA------------- */
+
+footer .block {
+    padding-top: 100px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin: 15px 0;
+    font-size: small;
+}
+
+footer a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+footer .footer-col-small a:hover {
+    text-decoration: underline;
+}
+
+footer h3 {
+    color: #7289da;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+footer h4 {
+    color: #7289da;
+    font-size: small;
+}
+
 footer > section {
     background-color: #23272a;
 }
 
 .footer-col-big {
-    width: calc(100%/3);
+    width: 30%;
     margin-top: -30px;
 }
 
+.footer-col-big img, .footer-col-big p {
+    display: inline-block;
+}
+
+.footer-col-big img {
+    height: 15px;
+}
+
+.footer-col-big p {
+    color: white;
+    margin: 15px 0;
+    font-size: small;
+}
+.footer-icons * {
+    color: white;
+    padding: 0 3px;
+}
+
 .footer-col-small {
-    width: calc(100%/6);
+    width: calc(100%/5);
     margin-top: -30px;
+    margin-left: 140px;
 }
 
 /* -------------SOTTO------------- */
 
+footer hr {
+    height: 1.5px;
+    border: none;
+    background-color: #7289da;
+}
+
 .footer-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
+    align-items: flex-start;
+    height: 80px;
+    padding-top: 5px;
 }
 
 .footer-nav-logo, .footer-nav-button {
