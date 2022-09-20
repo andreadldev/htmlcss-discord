@@ -26,8 +26,9 @@
     font-size: 14px;
 }
 
-.btn-header button {
+.header-btn button {
     font-size: large;
+    margin-left: 10px;
 }
 
 .btn-light {
@@ -148,9 +149,31 @@ main section:first-child {
     margin-top: 30px;
 }
 
+main section:nth-child(1):after,
+main section:nth-child(3):after {
+    content: "\00a0";
+    display: block;
+    background-image: url('img/wave.svg');
+    height: 100px;
+}
+
+main section:nth-child(3):before {
+    content: "\00a0";
+    display: block;
+    background-image: url('img/wave.svg');
+    transform: rotateX(180deg);
+    height: 100px;
+}
+
 section h2 {
     font-size: 38px;
     margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 35px;
 }
 
 section:nth-child(even) {
@@ -160,10 +183,12 @@ section:nth-child(even) {
 .block-small {
     width: 30%;
     padding-top: 30px;
+    margin: 40px 0;
 }
 
 .block-big {
     width: 60%;
+    margin: 40px 0;
 }
 
 .block-big:nth-child(2) {
@@ -173,6 +198,16 @@ section:nth-child(even) {
 .block-bigger {
     width: 70%;
     text-align: center;
+}
+
+.main-btn {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-top: 25px;
+    background-image: url('img/stars.svg');
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: 47%;
 }
 
 /* --------------------------------FOOTER--------------------------------- */
